@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui_user.products_user.ProductsUsersFragment">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/userSearchProductsSvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:autofillHints="Search The Products"
+        android:background="@drawable/linearmainbg"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:defaultQueryHint="Search The Products"
+        app:iconifiedByDefault="true"
+        app:submitBackground="@color/golden"
+        app:queryHint="Search The Products" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userProductsRvId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp" />
+
+</LinearLayout>

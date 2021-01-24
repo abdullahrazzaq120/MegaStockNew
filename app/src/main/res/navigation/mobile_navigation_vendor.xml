@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_vendor"
+    app:startDestination="@+id/nav_orders_vendor">
+
+    <fragment
+        android:id="@+id/nav_orders_vendor"
+        android:name="com.sortscript.megastock.Vendor.ui_vendor.orders.OrdersFragment"
+        android:label="@string/menu_orders"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/nav_add_products_vendor"
+        android:name="com.sortscript.megastock.Vendor.ui_vendor.add_products.AddProductsFragment"
+        android:label="@string/menu_add_products"
+        tools:layout="@layout/fragment_add_products" />
+
+    <fragment
+        android:id="@+id/nav_view_vendor"
+        android:name="com.sortscript.megastock.Vendor.ui_vendor.products_list.ProductsListFragment"
+        android:label="@string/menu_products_list"
+        tools:layout="@layout/fragment_products_list" />
+
+    <fragment
+        android:id="@+id/nav_change_password_vendor"
+        android:name="com.sortscript.megastock.Vendor.ui_vendor.change_password.ChangePasswordFragment"
+        android:label="@string/menu_change_password"
+        tools:layout="@layout/fragment_products_list" />
+
+    <fragment
+        android:id="@+id/nav_logout_vendor"
+        android:label="@string/menu_logout" />
+
+</navigation>

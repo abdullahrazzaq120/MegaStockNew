@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vendor.EditVendorProductsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/updateALogoBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_design_next"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Update a Logo"
+                android:textColor="@color/white" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/updateALogoImageId"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_image_24" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/updateProductTitleEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Product Title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/updateProductPackingEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Product Packing"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/updateProductDescriptionEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Write some description"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit : "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/updateUnitEtId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Unit" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/updateProductCostPriceEtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:hint="Cost Price"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/updateProductSalePriceEtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:hint="Sale Price"
+                android:inputType="number" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/updateProductCompanyBrandEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Company Brand"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/updateProductStockEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Product Stock"
+            android:inputType="number" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Category : "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/updateProductCategorySpinnerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:dropDownWidth="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/updatePublishBtnId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_design_next"
+            android:text="Update Post"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

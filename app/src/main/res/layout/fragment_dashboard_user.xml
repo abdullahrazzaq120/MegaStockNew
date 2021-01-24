@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui_user.dashboard.DashboardFragment">
+
+    <Button
+        android:id="@+id/editProfileBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:drawableEnd="@drawable/ic_baseline_arrow_right_alt_24"
+        android:gravity="start"
+        android:padding="15dp"
+        android:text="Edit Profile" />
+
+    <Button
+        android:id="@+id/userLogoutBtnId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_baseline_exit_to_app_24"
+        android:gravity="end"
+        android:padding="15dp"
+        android:text="Logout" />
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_user"
+    app:startDestination="@+id/navigation_products_user">
+
+    <fragment
+        android:id="@+id/navigation_products_user"
+        android:name="com.sortscript.megastock.ui_user.products_user.ProductsUsersFragment"
+        android:label="@string/title_products"
+        tools:layout="@layout/fragment_products_user" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard_user"
+        android:name="com.sortscript.megastock.ui_user.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard_user" />
+
+    <fragment
+        android:id="@+id/navigation_cart_user"
+        android:name="com.sortscript.megastock.ui_user.cart.CartFragment"
+        android:label="@string/title_cart"
+        tools:layout="@layout/fragment_cart_user" />
+
+
+</navigation>

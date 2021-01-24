@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Vendor.ui_vendor.add_products.AddProductsFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/addALogoBtnId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_design_next"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Add a Logo"
+                android:textColor="@color/white" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/addALogoImageId"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_baseline_image_24" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/addProductTitleEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Product Title"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/addProductPackingEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter Product Packing"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/addProductDescriptionEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Write some description"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit : "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <NumberPicker
+                android:id="@+id/addProductUnitNumberNpId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/addProductUnitSpinnerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:dropDownWidth="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <EditText
+                android:id="@+id/addProductCostPriceEtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:inputType="number"
+                android:layout_marginStart="10dp"
+                android:hint="Cost Price" />
+
+            <EditText
+                android:id="@+id/addProductSalePriceEtId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:inputType="number"
+                android:layout_marginEnd="10dp"
+                android:hint="Sale Price" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/addProductCompanyBrandEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:inputType="textPersonName"
+            android:hint="Company Brand" />
+
+        <EditText
+            android:id="@+id/addProductStockEtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:hint="Product Stock" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Category : "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/addProductCategorySpinnerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:dropDownWidth="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addPublishBtnId"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_design_next"
+            android:text="Publish Post"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

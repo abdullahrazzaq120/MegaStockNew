@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_orders_vendor"
+            android:icon="@drawable/ic_baseline_notifications_none_24"
+            android:title="@string/menu_orders" />
+        <item
+            android:id="@+id/nav_add_products_vendor"
+            android:icon="@drawable/ic_baseline_post_add_24"
+            android:title="@string/menu_add_products" />
+        <item
+            android:id="@+id/nav_view_vendor"
+            android:icon="@drawable/ic_baseline_list_24"
+            android:title="@string/menu_products_list" />
+
+        <item
+            android:id="@+id/nav_change_password_vendor"
+            android:icon="@drawable/ic_baseline_lock_24"
+            android:title="@string/menu_change_password" />
+
+        <item
+            android:id="@+id/nav_logout_vendor"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>

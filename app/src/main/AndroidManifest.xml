@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sortscript.megastock">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MegaStock">
+        <activity android:name=".Vendor.SignUpVendorActivity"></activity>
+        <activity android:name=".Vendor.SignInVendorActivity" />
+        <activity android:name=".WhoYouAre" />
+        <activity android:name=".EditChangePasswordActivity" />
+        <activity android:name=".EditAddressInfoActivity" />
+        <activity android:name=".EditPersonalInfoActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".ProceedToCheckutActivity" />
+        <activity
+            android:name=".DisplayProductDetailsActivity"
+            android:parentActivityName=".UserMenu"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Vendor.EditVendorProductsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserMenu"
+            android:label="@string/title_activity_user_menu"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Vendor.VendorMenu"
+            android:label="@string/title_activity_vendor_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MegaStock.NoActionBar" />
+        <activity
+            android:name=".Vendor.VendorProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpWithEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignInWithEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".Services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Services.MyFirebaseMessagingService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
